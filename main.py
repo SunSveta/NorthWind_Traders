@@ -19,7 +19,6 @@ with conn.cursor() as cur:
 
             for j in i.get('products'):
                 result_products_lst.update({j:sup_id})
-        #print(result_products_lst) #каждый раз продолжает ид, ???
         big_sql_row = ''
         for k, v in result_products_lst.items():
             prod_name = k
